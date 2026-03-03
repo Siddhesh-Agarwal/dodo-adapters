@@ -4,7 +4,7 @@ import type { UnionToIntersection } from "better-auth";
 import type { checkout } from "./plugins/checkout";
 import type { portal } from "./plugins/portal";
 import type { webhooks } from "./plugins/webhooks";
-import { usage } from "./plugins/usage";
+import type { usage } from "./plugins/usage";
 
 export type Product = {
   /**

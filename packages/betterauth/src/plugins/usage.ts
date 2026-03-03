@@ -4,7 +4,7 @@ import {
   sessionMiddleware,
 } from "better-auth/api";
 import type { DodoPayments } from "dodopayments";
-import { Event } from "dodopayments/resources/usage-events.mjs";
+import type { Event } from "dodopayments/resources/usage-events.mjs";
 import { z } from "zod/v3";
 
 const EventInputSchema = z.object({

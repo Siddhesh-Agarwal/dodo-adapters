@@ -1,10 +1,10 @@
 import type { DodoPayments } from "dodopayments";
 import {
   handleWebhookPayload,
-  WebhookHandlerConfig,
+  type WebhookHandlerConfig,
 } from "@dodopayments/core/webhook";
 import { APIError, createAuthEndpoint } from "better-auth/api";
-import { WebhookPayload } from "@dodopayments/core/schemas";
+import type { WebhookPayload } from "@dodopayments/core/schemas";
 import { verifyWebhookPayload } from "@dodopayments/core/webhook";
 import type { WebhookResponse } from "../types";
 
