@@ -1,6 +1,6 @@
 import type { CheckoutSessionPayload } from "@dodopayments/core/checkout";
 
-import {
+import type {
   GenericActionCtx,
   FunctionReference,
   GenericDataModel,

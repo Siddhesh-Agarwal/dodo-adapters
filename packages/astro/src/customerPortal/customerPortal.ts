@@ -1,5 +1,5 @@
 import type { APIContext, APIRoute } from "astro";
-import DodoPayments, { ClientOptions } from "dodopayments";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 
 export type CustomerPortalConfig = Pick<
   ClientOptions,
