@@ -6,7 +6,7 @@ import {
   type WebhookHandlerConfig,
   handleWebhookPayload,
 } from "@dodopayments/core/webhook";
-import { readRawBody, H3Event, createError, send, setResponseStatus } from "h3";
+import { readRawBody, type H3Event, createError, send, setResponseStatus } from "h3";
 import { WebhookPayloadSchema } from "@dodopayments/core/schemas";
 
 export function Webhooks(config: WebhookHandlerConfig) {

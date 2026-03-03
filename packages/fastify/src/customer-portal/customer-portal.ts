@@ -1,5 +1,5 @@
-import { FastifyRequest, FastifyReply } from "fastify";
-import DodoPayments, { ClientOptions } from "dodopayments";
+import type { FastifyRequest, FastifyReply } from "fastify";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 
 export type CustomerPortalConfig = Pick<
   ClientOptions,

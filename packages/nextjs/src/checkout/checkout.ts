@@ -1,7 +1,7 @@
-import { NextRequest, NextResponse } from "next/server";
+import { type NextRequest, NextResponse } from "next/server";
 import {
   buildCheckoutUrl,
-  CheckoutHandlerConfig,
+  type CheckoutHandlerConfig,
   checkoutQuerySchema,
   dynamicCheckoutBodySchema,
   checkoutSessionPayloadSchema,

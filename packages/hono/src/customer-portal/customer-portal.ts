@@ -1,5 +1,5 @@
-import { Context } from "hono";
-import DodoPayments, { ClientOptions } from "dodopayments";
+import type { Context } from "hono";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 
 export type CustomerPortalConfig = Pick<
   ClientOptions,

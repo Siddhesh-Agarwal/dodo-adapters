@@ -6,7 +6,7 @@ import {
   type WebhookHandlerConfig,
   handleWebhookPayload,
 } from "@dodopayments/core/webhook";
-import { FastifyRequest, FastifyReply } from "fastify";
+import type { FastifyRequest, FastifyReply } from "fastify";
 import { WebhookPayloadSchema } from "@dodopayments/core/schemas";
 
 export const Webhooks = ({

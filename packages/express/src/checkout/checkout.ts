@@ -2,7 +2,7 @@ import type { Request, Response } from "express";
 import {
   buildCheckoutUrl,
   dynamicCheckoutBodySchema,
-  CheckoutHandlerConfig,
+  type CheckoutHandlerConfig,
   checkoutQuerySchema,
   checkoutSessionPayloadSchema,
 } from "@dodopayments/core/checkout";

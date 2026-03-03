@@ -1,5 +1,5 @@
-import { Request, Response } from "express";
-import DodoPayments, { ClientOptions } from "dodopayments";
+import type { Request, Response } from "express";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 import type { ParsedQs } from "qs";
 
 export type CustomerPortalConfig = Pick<

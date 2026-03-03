@@ -1,5 +1,5 @@
-import DodoPayments, { ClientOptions } from "dodopayments";
-import { getQuery, sendRedirect, H3Event } from "h3";
+import DodoPayments, { type ClientOptions } from "dodopayments";
+import { getQuery, sendRedirect, type H3Event } from "h3";
 
 export type CustomerPortalConfig = Pick<
   ClientOptions,

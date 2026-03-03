@@ -1,7 +1,7 @@
-import { FastifyRequest, FastifyReply } from "fastify";
+import type { FastifyRequest, FastifyReply } from "fastify";
 import {
   buildCheckoutUrl,
-  CheckoutHandlerConfig,
+  type CheckoutHandlerConfig,
   checkoutQuerySchema,
   dynamicCheckoutBodySchema,
   checkoutSessionPayloadSchema,

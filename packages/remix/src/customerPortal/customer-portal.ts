@@ -1,4 +1,4 @@
-import DodoPayments, { ClientOptions } from "dodopayments";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 
 export type CustomerPortalConfig = Pick<
   ClientOptions,
@@ -9,7 +9,7 @@ export const CustomerPortal = ({
   bearerToken,
   environment,
 }: CustomerPortalConfig) => {
-  return async function (request: Request) {
+  return async (request: Request) => {
     const { searchParams } = new URL(request.url);
     const customerId = searchParams.get("customer_id");
     const sendEmailParam = searchParams.get("send_email");

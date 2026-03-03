@@ -1,11 +1,11 @@
 import {
   buildCheckoutUrl,
-  CheckoutHandlerConfig,
+  type CheckoutHandlerConfig,
   checkoutQuerySchema,
   dynamicCheckoutBodySchema,
   checkoutSessionPayloadSchema,
 } from "@dodopayments/core/checkout";
-import { getQuery, readBody, sendRedirect, H3Event, createError } from "h3";
+import { getQuery, readBody, type H3Event, createError } from "h3";
 
 export function checkoutHandler(config: CheckoutHandlerConfig) {
   return async (event: H3Event) => {

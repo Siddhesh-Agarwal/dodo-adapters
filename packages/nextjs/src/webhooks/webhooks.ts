@@ -6,8 +6,7 @@ import {
   type WebhookHandlerConfig,
   handleWebhookPayload,
 } from "@dodopayments/core/webhook";
-import { NextRequest, NextResponse } from "next/server";
-import { headers } from "next/headers";
+import { type NextRequest, NextResponse } from "next/server";
 import { WebhookPayloadSchema } from "@dodopayments/core/schemas";
 
 export const Webhooks = ({

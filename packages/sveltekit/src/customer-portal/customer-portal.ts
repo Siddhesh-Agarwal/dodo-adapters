@@ -1,6 +1,6 @@
-import { redirect, error, type RequestHandler } from "@sveltejs/kit";
+import { error, type RequestHandler } from "@sveltejs/kit";
 import type { RequestEvent } from "@sveltejs/kit";
-import DodoPayments, { ClientOptions } from "dodopayments";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 
 export type CustomerPortalConfig = Pick<
   ClientOptions,

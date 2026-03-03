@@ -1,6 +1,6 @@
 import {
   buildCheckoutUrl,
-  CheckoutHandlerConfig,
+  type CheckoutHandlerConfig,
   checkoutQuerySchema,
   dynamicCheckoutBodySchema,
   checkoutSessionPayloadSchema,
@@ -11,13 +11,13 @@ import {
  * Usage: export const loader = Checkout(config); export const action = Checkout(config);
  */
 export function Checkout(config: CheckoutHandlerConfig) {
-  return async function (request: Request) {
+  return async (request: Request) => {
     if (request.method === "POST") {
       // Handle dynamic checkout and checkout sessions (POST)
       let body: any;
       try {
         body = await request.json();
-      } catch (e) {
+      } catch (e: any) {
         return new Response("Invalid JSON body", { status: 400 });
       }
 

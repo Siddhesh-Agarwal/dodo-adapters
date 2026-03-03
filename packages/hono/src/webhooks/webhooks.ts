@@ -6,7 +6,7 @@ import {
   type WebhookHandlerConfig,
   handleWebhookPayload,
 } from "@dodopayments/core/webhook";
-import { Context } from "hono";
+import type { Context } from "hono";
 import { WebhookPayloadSchema } from "@dodopayments/core/schemas";
 
 export const Webhooks = ({

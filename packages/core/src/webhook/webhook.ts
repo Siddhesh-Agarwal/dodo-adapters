@@ -6,11 +6,11 @@
  */
 
 import {
-  WebhookEventHandlers,
-  WebhookPayload,
-  Resolve,
+  type WebhookEventHandlers,
+  type WebhookPayload,
+  type Resolve,
   WebhookPayloadSchema,
-  HandlerWithContext,
+  type HandlerWithContext,
 } from "../schemas/webhook";
 import {
   Webhook as StandardWebhook,

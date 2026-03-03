@@ -1,6 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
-import { redirect } from "next/navigation";
-import DodoPayments, { ClientOptions } from "dodopayments";
+import { type NextRequest, NextResponse } from "next/server";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 
 export type CustomerPortalConfig = Pick<
   ClientOptions,

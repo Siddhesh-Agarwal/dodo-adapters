@@ -1,7 +1,7 @@
-import { Context } from "hono";
+import type { Context } from "hono";
 import {
   buildCheckoutUrl,
-  CheckoutHandlerConfig,
+  type CheckoutHandlerConfig,
   checkoutQuerySchema,
   dynamicCheckoutBodySchema,
   checkoutSessionPayloadSchema,

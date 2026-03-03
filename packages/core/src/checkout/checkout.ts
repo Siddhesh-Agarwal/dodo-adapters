@@ -1,5 +1,5 @@
 import { z } from "zod/v3";
-import DodoPayments, { ClientOptions } from "dodopayments";
+import DodoPayments, { type ClientOptions } from "dodopayments";
 
 export type CheckoutHandlerConfig = Pick<
   ClientOptions,
